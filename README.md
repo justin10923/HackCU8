@@ -1,2 +1,3 @@
-# flask-workshop
-This is a basic flask webapp, that you can use as a boilerplate for your projects.
+# Hack CU 8 Project
+
+Collaborators: Justin Lee, Ryan Slocum, Abby, Ansh
