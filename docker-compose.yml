@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  remindDB:
+    image: mysql:8.0.17
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: remindDB
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./sqlCommands.sql:/docker-entrypoint-initdb.d/0_init.sql
