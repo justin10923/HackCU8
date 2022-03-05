@@ -1,3 +1,3 @@
 # Hack CU 8 Project
 
-Collaborators: Justin Lee, Ryan Slocum, Abby, Ansh
+Collaborators: Justin Lee, Ryan Slocum, Abby Nacional, Ansh Jhatakia
