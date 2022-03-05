@@ -5,6 +5,17 @@ body {
 	height: 100vh;
 }
 
+.mycustom-jumbotron {
+  border:10px solid #003366;
+  width: 900px;
+  margin: 0 auto
+}
+
+.title-header
+{
+  font-family: 'Josefin Sans';font-size: 42px;
+}
+
 footer {
   text-align: center;
   margin-top: 7rem;

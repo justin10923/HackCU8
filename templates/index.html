@@ -13,18 +13,18 @@
         {% endfor %}
      {% endif %}
   {% endwith %}
-  <div id="big">
-    Re-Connect!
-    <br/><br/>
-    "Re-Connecting people"
-    <br/><br/>
+  <div class="jumbotron mycustom-jumbotron text-center">
+    <h1>Add Contacts and Friends</h1>
+    <p>View current reminders, create new ones, make a call, or show
+      upcoming calls.</p>
   </div>
+  <br><br>
   <!--- Action Buttons --->
   <form method="post">
     <input type="submit" name="add" value="Add person" class="btn btn-primary active">
     <!--<button type="button" name = "add" value =class="btn btn-primary">Primary</button>-->
     <input type="submit" name="all" value="Show all reminders" class="btn btn-info active">
-    <input type="submit" name="last" value="Show upcoming calls" class="btn btn-success active">
-    <input type="submit" name="last" value="Make a call" class="btn btn-danger active">
+    <input type="submit" name="upcoming" value="Show upcoming calls" class="btn btn-success active">
+    <input type="submit" name="new" value="Make a call" class="btn btn-danger active">
   </form>
 {% endblock %}

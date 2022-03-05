@@ -29,7 +29,9 @@ db.create_all()
 
 class PersonForm(Form):
     name = StringField('Name', [validators.Length(min=4, max=25)])
-    age = IntegerField('Age', [validators.NumberRange(min=0, max=140)])
+    phone = IntegerField('Phone', [validators.NumberRange(min=0, max=140)])
+    email = StringField('Email', [validators.Length(min=4, max=25)])
+    interval = IntegerField('Contact Interval (Days)', [validators.NumberRange(min=0, max=140)])
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
@@ -38,15 +40,17 @@ def main():
             return redirect(url_for("add"))
         elif 'all' in request.form:
             return redirect(url_for("all"))
-        elif 'last' in request.form:
-            return redirect(url_for("last"))
+        #elif 'upcoming' in request.form:
+            #return redirect(url_for("upcoming"))
+        #elif 'new' in request.form:
+            #return redirect(url_for("new"))
     return render_template('index.html')
 
 @app.route('/add', methods=['GET', 'POST'])
 def add():
     form = PersonForm(request.form) 
     if request.method == "POST" and form.validate():
-        person = Person(Name=form.name.data, Age=form.age.data)
+        person = Person(Name=form.name.data, Phone=form.phone.data, Email=form.email.data, ContactInterval=form.interval.data)
         db.session.add(person)
         db.session.commit()
         # Adding this person as last one added

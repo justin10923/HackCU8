@@ -11,9 +11,11 @@
   <form method=post>
     <dl>
       {{ render_field(form.name) }}
-      {{ render_field(form.age) }}
+      {{ render_field(form.email) }}
+      {{ render_field(form.phone) }}
+      {{ render_field(form.interval) }}
     </dl>
-    <p><input type=submit value=Register>
+    <p><input type = "submit" class="btn btn-primary" value=Register>
   </form>
 
 {% endblock %}
