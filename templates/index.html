@@ -14,15 +14,17 @@
      {% endif %}
   {% endwith %}
   <div id="big">
-    Hello world!
+    Re-Connect!
     <br/><br/>
-    What do you want to do?
+    "Re-Connecting people"
     <br/><br/>
   </div>
   <!--- Action Buttons --->
   <form method="post">
-    <input type="submit" name="add" value="Add person" class="active">
-    <input type="submit" name="all" value="Show all entries" class="active">
-    <input type="submit" name="last" value="Show last entry" class="active">
+    <input type="submit" name="add" value="Add person" class="btn btn-primary active">
+    <!--<button type="button" name = "add" value =class="btn btn-primary">Primary</button>-->
+    <input type="submit" name="all" value="Show all reminders" class="btn btn-info active">
+    <input type="submit" name="last" value="Show upcoming calls" class="btn btn-success active">
+    <input type="submit" name="last" value="Make a call" class="btn btn-danger active">
   </form>
 {% endblock %}
