@@ -4,12 +4,12 @@ from email.mime.text import MIMEText
 
 #Email Account
 email_sender_account = "reconnect.hack@gmail.com" #I'm not sure about this one.
-email_sender_username = "reconnect.hack@gmail.com"
+email_sender_username = "reconnect.hack"
 email_sender_password = "ReconnectP@ssword"
 email_smtp_server = "smtp.gmail.com"
-email_smtp_port = 587 #Email Content
-recipient = "<recepient1>"
-email_subject = "<Email Subject>"
+email_smtp_port = 587 
+recipient = "ansh_jhatakia@yahoo.com"
+email_subject = "Alert from Re-connect!"
 email_body = "Hello! This is a reminder that you need to re-connect with " + "<Person's name>" + ". Click on the followng link once you have done so."
                 #Make sure to provide a link.
 #login to email server
