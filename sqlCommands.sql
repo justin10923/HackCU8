@@ -17,5 +17,7 @@ CREATE TABLE `remindDB`.`contacts`(
     `email_1` VARCHAR(50),
     `phonenumber_0` INT NOT NULL,
     `phonenumber_1` INT NOT NULL,
+    `next_contact_date` DATETIME,
+    `interval_days` INT,
     `created` DATETIME DEFAULT CURRENT_TIMESTAMP
 );
